@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
